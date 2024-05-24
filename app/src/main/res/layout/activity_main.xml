@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="44dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/matchnim" />
+    </LinearLayout>
+
+    <!-- Select Row -->
+
+    <!-- Number of Matchsticks to Remove -->
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:text="Game Status"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textColorHighlight="@color/material_dynamic_neutral30"
+        android:textColorHint="@color/material_dynamic_neutral30"
+        android:textColorLink="@color/material_dynamic_neutral30"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/makeMoveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchsticksEditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- Make Move Button -->
+
+    <!-- New Game Button -->
+
+    <RadioGroup
+        android:id="@+id/rowRadioGroup"
+        android:layout_width="85dp"
+        android:layout_height="193dp"
+        android:layout_below="@id/statusTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="212dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <RadioButton
+            android:id="@+id/row1RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Row 1"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/row2RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Row 2"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/row3RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Row 3"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/row4RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Row 4"
+            android:textColor="@color/black"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/matchsticksEditText"
+        android:layout_width="174dp"
+        android:layout_height="77dp"
+        android:layout_below="@id/rowRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:hint="Enter number"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/material_dynamic_neutral30"
+        android:textColorLink="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <Button
+        android:id="@+id/makeMoveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/matchsticksEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp"
+        android:text="Make Move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchsticksEditText" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/makeMoveButton"
+        android:layout_centerHorizontal="true"
+        android:text="New Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
